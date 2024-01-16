@@ -1,0 +1,197 @@
+body {
+    background-color: #000000;
+    font-family: Inter, sans-serif;
+}
+
+.nav {
+    width: 15%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #131313;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.nav > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav input[type="checkbox"]:checked {
+    background-color: transparent;
+}
+
+.nav input[type="checkbox"] + p {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #0062ff;
+    transition: color 0.3s;
+}
+
+.nav input[type="checkbox"]:hover {
+    background-color: #D9D9D9;
+}
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 10px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: 90%;
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.input {
+    font-size: 12px; /* Aangepaste grootte */
+    background-color: transparent;
+    width: 100%; /* Neem de volledige breedte in beslag */
+    height: 100%; /* Neem de volledige hoogte in beslag */
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+
+#searchInput {
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder de zoekbalk */
+}
+
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .form svg {
+    width: 17px;
+    margin-top: 25%;
+  }
+
+  .container-map {
+    display: flex;
+    margin-left: 35%;
+    align-items: center;
+    height: 75vh;
+    width: 110vh;
+    background-color: #000000;
+}
+
+.border-container {
+    border: 1px solid #D9D9D9;
+    padding: 10px;
+    overflow: hidden; /* Voeg deze regel toe om het overflowgedrag te beheren */
+}
+
+.container-map img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    transition: transform 0.3s ease; /* Voeg een overgang toe voor de zoomanimatie */
+}
+
+/* Voeg de volgende stijlen toe voor de zoomknoppen */
+.zoom-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.zoom-buttons button {
+    background-color: #131313;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+

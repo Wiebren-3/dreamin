@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>dreamin'</title>
+    <link rel="shortcut icon" type="image" href="assets/icons/pfp_round.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Luckiest+Guy">
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&amp;family=Ubuntu:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter">
+    <meta content="dreamin'" property="og:title">
+    <meta content="https://wiebren.space/dreamin'/" property="og:url">
+    <meta content="https://wiebren.space/dreamin'/assets/icons/pfp.svg" property="og:image">
+    <meta content="#0062ff" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body>
+    <div class="nav">
+        <form class="form">
+            <button>
+                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <input class="input" id="searchInput" placeholder="Search something up..." required="" type="text">
+            <button class="reset" type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </form>
+        <div class="select1">
+            <input type="checkbox" id="select1" name="select1" value="Houses || Private" keywords="houses,private,housesprivate,huizen,prive,huis">
+            <p>Houses || Private</p>
+        </div>
+        <div class="select2">
+            <input type="checkbox" id="select2" name="select2" value="Offices || Commercial" keywords="offices,commercial,officescommercial,kantoren,office,commercieel,kantoor">
+            <p>Offices || Commercial</p>
+        </div>
+        <div class="select3">
+            <input type="checkbox" id="select3" name="select3" value="Shelters" keywords="shelters,schuilplaatsen,bunkers,doomsday,survival">
+            <p>Shelters</p>
+        </div>
+        <div class="select4">
+            <input type="checkbox" id="select4" name="select4" value="Helipads" keywords="helipads,heli,helicopter,helikopter,rotor,h">
+            <p>Helipads</p>
+        </div>
+        <div class="select5">
+            <input type="checkbox" id="select5" name="select5" value="Landing strips" keywords="landing,airplane,plane,strips,landingsbaan">
+            <p>Landing strips</p>
+        </div>
+        <div class="select6">
+            <input type="checkbox" id="select6" name="select6" value="Hangar" keywords="hangar,hangar,opslag,storage,hangaar">
+            <p>Hangar</p>
+        </div>
+        <div class="select7">
+            <input type="checkbox" id="select7" name="select7" value="Solar" keywords="solar,solarpower,power,electricity,zonnepanelen,zonne">
+            <p>Solar</p>
+        </div>
+        <div class="select8">
+            <input type="checkbox" id="select8" name="select8" value="Bunker" keywords="bunker,shelters,schuilplaatsen,bunker,bunkers,doomsday,survival">
+            <p>Bunker</p>
+        </div>
+        <div class="select9">
+            <input type="checkbox" id="select9" name="select9" value="Shelters" keywords="bunker,shelters,schuilplaatsen,bunker,bunkers,doomsday,survival">
+            <p>Shelters</p>
+        </div>
+        <div class="select10">
+            <input type="checkbox" id="select10" name="select10" value="Helipads/Dronepads" keywords="helipads,heli,helicopter,helikopter,rotor,h,drone,drones,rc">
+            <p>Helipads/Dronepads</p>
+        </div>
+        <div class="select11">
+            <input type="checkbox" id="select11" name="select11" value="Driveway" keywords="cars,driveway,autos,auto,car,garage,garages">
+            <p>Driveway</p>
+        </div>
+        <div class="select12">
+            <input type="checkbox" id="select12" name="select12" value="Pools" keywords="pool,pools,zwembad,zwembaden,water">
+            <p>Pools</p>
+        </div>
+        <div class="select13">
+            <input type="checkbox" id="select13" name="select13" value="Docks" keywords="boten,boot,haven,water">
+            <p>Docks</p>
+        </div>
+        <div class="select14">
+            <input type="checkbox" id="select13" name="select14" value="Parking" keywords="parking,park,parkeren,parkeerplaats,parkeer">
+            <p>Parking</p>
+        </div>
+        <div class="select15">
+            <input type="checkbox" id="select13" name="select15" value="Techroom" keywords="techroom,tech,drone,drones,elektronica,electronics,gadgets,gadget">
+            <p>Techroom</p>
+        </div>
+    </div>
+
+    <div class="container-map draggable">
+    <div class="zoom-buttons">
+        <button onclick="zoomIn()">+</button>
+        <button onclick="zoomOut()">-</button>
+    </div>
+
+        <div class="border-container">
+            <img src="assets/elements/container-map.svg" alt="Container Map">
+        </div>
+    </div>
+
+</body>
+<script src="assets/scripts/searchlogic.js"></script>
+<script src="assets/scripts/zoom.js"></script>
+</html>
