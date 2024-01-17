@@ -151,7 +151,7 @@ body {
   
   .form svg {
     width: 17px;
-    margin-top: 25%;
+    margin-top: %;
   }
 
   .container-map {
@@ -186,7 +186,7 @@ body {
 }
 
 .zoom-buttons button {
-    background-color: #131313;
+    background-color: #dadada;
     color: #FFFFFF;
     border: none;
     padding: 5px;

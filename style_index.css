@@ -1,0 +1,36 @@
+body {
+    font-family: Inter, sans-serif;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+.image {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 41%;
+}
+
+.head1 {
+    font-family: Inter, sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.head2 {
+    font-family: Inter, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer {
+    font-family: Inter, sans-serif;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-top: 17.5%;
+    margin-left: 85%;
+}
