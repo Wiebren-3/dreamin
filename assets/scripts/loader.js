@@ -1,5 +1,5 @@
 function redirectToMap() {
-      window.location.href = 'map.html';
+      window.location.href = 'dashboard';
     }
 
     // Set a timeout for 5 seconds
